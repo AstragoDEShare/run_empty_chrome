@@ -6,4 +6,4 @@ if port = "" Then
     port = "80"
 End if
 
-CreateObject("Wscript.Shell").Run "emptyChrome.bat http://127.0.0.1:" + port, 0, True
+CreateObject("Wscript.Shell").Run "emptyChrome.bat " + port, 0, True
