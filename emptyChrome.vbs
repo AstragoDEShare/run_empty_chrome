@@ -11,4 +11,4 @@ Else
 End if
 
 ' chr(34) => "
-CreateObject("Wscript.Shell").Run chr(34) + "C:\Program Files\Google\Chrome\Application\chrome.exe" + chr(34) + "--user-data-dir=" + chr(34) + "C:\temp\profile\userdata" + chr(34) + "--new-window http://127.0.0.1:" + port, 0, True
+CreateObject("Wscript.Shell").Run chr(34) + "C:\Program Files\Google\Chrome\Application\chrome.exe" + chr(34) + "--user-data-dir=" + chr(34) + "%TEMP%\TempChromeProfile" + chr(34) + "--new-window http://127.0.0.1:" + port, 0, True
